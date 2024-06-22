@@ -2,8 +2,14 @@
 
 /******************************************************************************/
 
-const convertToBase2 = element => {
-  // Your code here 
+const convertToBase2 = element => {   // if number
+    if(typeof element === 'number') return '0b' + element.toString(2);
+
+    if(element[1] === 'x') {    // if hex convert to base10 num
+        let baseTen = parseInt(element);
+        console.log(baseTen);
+        return '0b' + baseTen.toString(2);
+    };
 };
 
 /******************************************************************************/
