@@ -22,7 +22,7 @@ const binaryStringToArray = str => {
 };
 
 const binaryToAscii = str => {
-  // Your code here 
+    for(let i = 0; i < str.length; i += 8;)
 };
 
 /******************************************************************************/
