@@ -21,9 +21,16 @@ const binaryStringToArray = str => {
   return binary8bitStr.split(',');
 };
 
+console.log(binaryStringToArray('011000010110001001100011'));
+
+
 const binaryToAscii = str => {
-    for(let i = 0; i < str.length; i += 8;)
-};
+    let array = binaryStringToArray(str);
+    console.log(array);
+    let baseTens = array.map(string => parseInt(string, 2));
+    console.log(baseTens);
+    return String.fromCharCode(...baseTens);
+}
 
 /******************************************************************************/
 
