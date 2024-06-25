@@ -161,3 +161,12 @@ console.log(calculateTruthTable3(0, and, 0, or, !1));
 console.log(calculateTruthTable3(0, and, 1, or, !1));
 console.log(calculateTruthTable3(1, and, 0, or, !1));
 console.log(calculateTruthTable3(1, and, 1, or, !1));
+
+// example from the top --
+//    A    B     !A || (A && B)
+//    -------------------
+//    0    1      ?
+// answer: 1
+console.log(calculateTruthTable3(!0, or, 0, and, 1));
+// only works if left side is true, reorder again \/
+console.log(calculateTruthTable3(0, and, 1, or, !0));
