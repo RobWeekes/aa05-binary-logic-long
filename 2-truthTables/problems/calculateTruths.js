@@ -150,3 +150,14 @@ console.log(calculateTruthTable3(!1, or, 0, and, 0));
 console.log(calculateTruthTable3(!1, or, 0, and, 1));
 console.log(calculateTruthTable3(!1, or, 1, and, 0));
 console.log(calculateTruthTable3(!1, or, 1, and, 1));
+
+// reordering arguments so B && C is on the left, !A on the right \/
+
+console.log(calculateTruthTable3(0, and, 0, or, !0));
+console.log(calculateTruthTable3(0, and, 1, or, !0));
+console.log(calculateTruthTable3(1, and, 0, or, !0));
+console.log(calculateTruthTable3(1, and, 1, or, !0));
+console.log(calculateTruthTable3(0, and, 0, or, !1));
+console.log(calculateTruthTable3(0, and, 1, or, !1));
+console.log(calculateTruthTable3(1, and, 0, or, !1));
+console.log(calculateTruthTable3(1, and, 1, or, !1));
